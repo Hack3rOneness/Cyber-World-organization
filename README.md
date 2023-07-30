@@ -1,4 +1,4 @@
-# Cyber-World-organization
+# Cyber-World-Organization
 
-# ![image](/lettering-lettering-coming-soon-calligraphic-text.png)
+# ![Alt image](/lettering-lettering-coming-soon-calligraphic-text.png)
 Cyber Crime Agency Internship Program 2023
