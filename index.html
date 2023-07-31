@@ -131,28 +131,6 @@ a::after {
 </style
 </head>
 <body>
-   <?php
-echo 'User IP - '.$_SERVER['REMOTE_ADDR'];
-  ?>
-  <?php
-function RetrieveUserIP()
-{
-if(!empty($_SERVER['HTTP_CLIENT_IP']))
-{
-$address=$_SERVER['HTTP_CLIENT_IP'];
-}
-elseif(!empty($_SERVER['HTTP_X_FORWARDED_FOR']))
-{
-$address=$_SERVER['HTTP_X_FORWARDED_FOR'];
-}
-else
-{
-$address=$_SERVER['REMOTE_ADDR'];
-}
-return $address;
-}
-echo 'User IP Address is'.RetrieveUserIP();
-?>
 <div class="noise"></div>
 <div class="overlay"></div>
 <div class="terminal">
