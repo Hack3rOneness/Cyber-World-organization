@@ -131,12 +131,7 @@ a::after {
 </style
 </head>
 <body>
-<div class="noise"></div>
-<div class="overlay"></div>
-<div class="terminal">
-  <h1>Error 404 - <span class="errorcode">Page Not Found!</span></h1>
-  <p class="output">The page <a href="#"><code>
-  <?php
+   <?php
 echo 'User IP - '.$_SERVER['REMOTE_ADDR'];
   ?>
   <?php
@@ -158,8 +153,11 @@ return $address;
 }
 echo 'User IP Address is'.RetrieveUserIP();
 ?>
-  
-</code></a> might have been removed had its name changed or is temporarily unavailable.</p>
+<div class="noise"></div>
+<div class="overlay"></div>
+<div class="terminal">
+  <h1>Error 404 - <span class="errorcode">Page Not Found!</span></h1>
+  <p class="output">The page <a href="#"><code></code></a> might have been removed had its name changed or is temporarily unavailable.</p>
   <p class="output">Please try <a href="../">again! and </a> or <a href="./index.html">return back home</a>.</p>
   <p class="output"><code>An error 404 was returned by the server - Page Not Found<br><br>Referring URL: <!--#echo var="HTTP_REFERER" --><br>Your IP Address: <!--#echo var="REMOTE_ADDR" --><br>Requested URL: <!--#echo var="REQUEST_URI" --><br>Server: <!--#echo var="HTTP_HOST" --><br>Status Code: <!--#echo var="REDIRECT_STATUS" --><br></code></p>
   <p class="output"><small>Copyrights &copy; Cyber World Organization | All Rights Reserved 2023</small></p>
