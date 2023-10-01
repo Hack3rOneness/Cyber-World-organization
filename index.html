@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Website is Under Development Mode</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Bootstrap css -->
+
+    <!-- Main custom css -->
+    <link href="css/custom.css" rel="stylesheet" media="screen">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js'></script>
+    <script type='text/javascript' src='javascripts/jquery.tipsy.js'></script>
+    <script type='text/javascript'>
+        $(function() {
+            $('#tipsy').tipsy({
+                fade: true,
+                gravity: 's'
+            });
+        });
+
+    </script>
+    <!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <img src="images/logo.png" alt="YourLogo" title="YourLogo" />
+        <div class="hr"></div>
+        <h1>Coming Soon to a Browser Near You</h1>
+        <p>Unfortunately, we’re not quite ready yet. <strong> But, you can see our progress below:</strong></p>
+
+        <section class="progress">
+            <div class="progress-bar-container" id="tipsy" title="87% Complete">
+                <!-- Edit this title for the tooltip pop up -->
+                <article class="progress-bar" style="width:87%"></article> <!-- Edit the width percentage value to indicate progress -->
+            </div>
+            <article class="txt-launch-day-hat"></article>
+        </section>
+
+
+        <!-- Types Information start -->
+        <div class="coming-text">
+            <h1>
+                <center><span class="typed-title">Cyber World Organization</span></center>
+            </h1>
+            <div class="typing-title">
+                <p>Cyber World Organization</p>
+                <p>Coming Soon</p>
+            </div>
+        </div>
+        <!-- Types Information end -->
+
+        <!-- Countdown start -->
+        <div class="countdown-timer-wrapper">
+            <div class="timer" id="countdown"></div>
+        </div>
+        <!-- Countdown end -->
+
+
+        <div class="hr"></div>
+        <section class="mailing-list">
+            <h2>Want to be the first to know when we're ready?</h2>
+            <form>
+                <input type="text" value="your@email.com" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;">
+                <input type="submit" value="Subscribe">
+            </form>
+        </section>
+        <div class="clear"></div>
+        <div class="hr"></div>
+
+        <p class="credit">Template by <a href="http://www.medialoot.com">MediaLoot</a></p>
+    </div>
+    <!-- Coming Soon Wrapper end -->
+
+    <!-- Jquery Library File -->
+    <script src="javascripts/jquery-1.12.4.min.js"></script>
+    <!-- Timer counter js file -->
+    <script src="javascripts/countdown-timer.js"></script>
+    <!-- Typed js file -->
+    <script src="javascripts/typed.js"></script>
+    <!-- SmoothScroll -->
+    <script src="javascripts/SmoothScroll.js"></script>
+    <!-- Bootstrap js file -->
+    <script src="javascripts/bootstrap.min.js"></script>
+    <!-- Main Custom js file -->
+    <script src="javascripts/function.js"></script>
+    <!-- Timer counter start -->
+    <script>
+        $(document).ready(function() {
+            //var myDate = new Date("08/04/2019");
+            var myDate = new Date();
+            myDate.setDate(myDate.getDate() + 2);
+            $("#countdown").countdown(myDate, function(event) {
+                $(this).html(
+                    event.strftime(
+                        '<div class="timer-wrapper"><div class="time">%D</div><span class="text">Days</span></div><div class="timer-wrapper"><div class="time">%H</div><span class="text">Hours</span></div><div class="timer-wrapper"><div class="time">%M</div><span class="text">Minutes</span></div><div class="timer-wrapper"><div class="time">%S</div><span class="text">Seconds</span></div>'
+                    )
+                );
+            });
+
+        });
+
+    </script>
+    <!-- Timer counter end -->
+</body>
+
+</html>
